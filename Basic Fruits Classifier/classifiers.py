@@ -19,7 +19,7 @@ fruits = pd.read_table('fruit_data_with_colors.txt')
 #print(fruits.head())
 #print(fruits['fruit_name'].unique())
 #print(fruits.groupby('fruit_name').size())
-'''
+
 sns.countplot(fruits['fruit_name'],label='Count')
 plt.show()
 
@@ -33,7 +33,7 @@ fruits.drop('fruit_label' ,axis=1).hist(bins=30, figsize=(9,9))
 pl.suptitle("Histogram for each numeric input variable")
 plt.savefig('fruits_hist')
 plt.show()
-'''
+
 feature_names = ['mass', 'width', 'height', 'color_score']
 X = fruits[feature_names]
 y = fruits['fruit_label']

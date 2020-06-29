@@ -39,6 +39,7 @@ def predict_price(dates, prices, x):
 	return svr_rbf.predict(x)[0], svr_lin.predict(x)[0], svr_poly.predict(x)[0]
 
 get_data('AAPL.csv')
+
 #print ("Dates- ", dates)
 #print ("Prices- ", prices)
 
